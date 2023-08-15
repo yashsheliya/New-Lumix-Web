@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="./src/assets/js/flowbite.js"></script>
+</head>
+<body class="font-Rubik bg-primary10">
+  
+
+
+    <header id="top-header">
+        <nav class=" py-5 xl:px-0 px-4">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <div class="flex items-center lg:order-2">
+
+                    <div class="bell-pin-fill mr-5">
+                        <!-- <img src="./assets/img/Bell_pin_fill.svg" alt=""> -->
+                        <button id="dropdownNotificationButton" data-dropdown-toggle="dropdownNotification" class="inline-flex items-center text-sm font-medium text-center text-gray-500  focus:outline-none dark:hover:text-white dark:text-gray-400" type="button"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path d="M4.6718 7.95413C4.707 7.63728 4.7246 7.47885 4.74466 7.34177C5.30439 3.51642 8.51961 0.638659 12.3834 0.504797C12.5218 0.5 12.6812 0.5 13 0.5C13.3188 0.5 13.4782 0.5 13.6167 0.504797C17.4805 0.638659 20.6957 3.51642 21.2554 7.34177C21.2755 7.47885 21.2931 7.63728 21.3283 7.95413L21.706 11.3535C21.8067 12.2603 21.8571 12.7137 21.9573 13.1543C22.078 13.6855 22.2526 14.2029 22.4785 14.6986C22.6659 15.1098 22.9006 15.501 23.37 16.2834L24.6826 18.471C25.4884 19.8139 25.8913 20.4854 25.604 20.9927C25.3168 21.5 24.5338 21.5 22.9677 21.5H3.03241C1.46631 21.5 0.683252 21.5 0.396023 20.9927C0.108793 20.4854 0.511671 19.8139 1.31743 18.471L2.63002 16.2834C3.09946 15.501 3.33418 15.1098 3.52153 14.6986C3.74742 14.2029 3.92208 13.6855 4.04281 13.1543C4.14295 12.7137 4.19333 12.2603 4.29409 11.3535L4.6718 7.95413Z" fill="#4F5665"/>
+                                <path d="M8.50003 21.5C8.50003 22.0909 8.61643 22.6761 8.84257 23.2221C9.06872 23.768 9.40019 24.2641 9.81805 24.682C10.2359 25.0998 10.732 25.4313 11.278 25.6575C11.8239 25.8836 12.4091 26 13 26C13.591 26 14.1761 25.8836 14.7221 25.6575C15.2681 25.4313 15.7641 25.0998 16.182 24.682C16.5999 24.2641 16.9313 23.768 17.1575 23.2221C17.3836 22.6761 17.5 22.0909 17.5 21.5H8.50003Z" fill="#4F5665"/>
+                                </svg>
+                            <div class="relative flex">
+                              <div class="relative inline-flex w-4 h-4 bg-primary border-2 border-primary10 rounded-full -top-2 right-3 dark:border-gray-900 text-11 justify-center items-center"></div>
+                            </div>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNotification" class="z-20 hidden w-full max-w-220 bg-white divide-y divide-gray-100 rounded-lg translate-x-0 -left-20 top-9" aria-labelledby="dropdownNotificationButton" >
+                            <div class="block pr-6 pl-4 py-5 font-medium text-gray-700 rounded-lg bg-white ">
+                                <ul class="max-w-md flex flex-wrap gap-y-4">
+                                    <li class="text-primary ml-4 relative before:absolute before:w-2 before:h-2 before:bg-primary before:top-2  before:-left-4 before:rounded-full">
+                                        <span class="text-primary4 font-light text-13"><b class="font-bold">8/7/2023:</b> Something has been added to the website</p></span>
+                                    </li>
+                                    <li class="text-primary ml-4 relative before:absolute before:w-2 before:h-2 before:bg-primary before:top-2  before:-left-4 before:rounded-full">
+                                        <span class="text-primary4 font-light text-13"><b class="font-bold">8/7/2023:</b> Something has been added to the website</p></span>
+                                    </li>
+                                    <li class="text-primary ml-4 relative before:absolute before:w-2 before:h-2 before:bg-primary before:top-2  before:-left-4 before:rounded-full">
+                                        <span class="text-primary4 font-light text-13"><b class="font-bold">8/7/2023:</b> Something has been added to the website</p></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <a href="./dashboard.html" class="text-primary  hover:text-white hover:bg-primary font-medium text-sm lg:px-33 lg:py-3.3 px-6 py-2 focus:outline-none bg-transparent rounded-full border border-primary transition duration-700 ease-in-out font-Rubik">Dashboard</a>
+                </div>
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 " aria-controls="mobile-menu-2" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                  </svg>
+                  <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+              </button>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 text-base lg:flex-row lg:mt-0 lg:bg-transparent bg-white lg:p-0 p-4 md:br rounded-md">
+                        <li class="mb-1 lg:mb-0">
+                          <a href="./index.html" class="block lg:text-primary3 lg:hover:text-primary lg:p-0 py-1.5 px-4 lg:bg-transparent bg-primary rounded-md text-white">Home</a>
+                        </li>
+                        <li class="lg:ml-10 mb-1 lg:mb-0">
+                          <a href="#" class="block lg:text-primary3 hover:text-white lg:hover:text-primary lg:hover:bg-transparent lg:p-0 py-1.5 px-4 lg:bg-transparent hover:bg-primary rounded-md md:hover:text-white">Features</a>
+                        </li>
+                        <li class="lg:ml-10 mb-1 lg:mb-0">
+                          <a href="#" class="block lg:text-primary3 hover:text-white lg:hover:text-primary lg:hover:bg-transparent lg:p-0 py-1.5 px-4 lg:bg-transparent hover:bg-primary rounded-md md:hover:text-white">Pricing</a>
+                        </li>
+                        <li class="lg:ml-10 mb-1 lg:mb-0">
+                          <a href="#" class="block lg:text-primary3 hover:text-white lg:hover:text-primary lg:hover:bg-transparent lg:p-0 py-1.5 px-4 lg:bg-transparent hover:bg-primary rounded-md md:hover:text-white">FAQ</a>
+                        </li>
+                        <li class="lg:ml-10 mb-1 lg:mb-0">
+                          <a href="#" class="block lg:text-primary3 hover:text-white lg:hover:text-primary lg:hover:bg-transparent lg:p-0 py-1.5 px-4 lg:bg-transparent hover:bg-primary rounded-md md:hover:text-white">Free Trial</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav> 
+    </header>
+
+    <main id="main">
+        <section class="dashboard-start lg:pt-28 pt-8 xl:px-0 px-4">
+            <div class="container mx-auto">
+                <!-- cart box start -->
+                <div class="grid xl:grid-cols-6 xl:gap-6 lg:grid-cols-5 lg:gap-5 mb-50 md:grid-cols-4 md:gap-4 grid-cols-2 gap-2">
+                    <div class="rounded-btn-radius bg-white py-4 px-5">
+                      <div class="flex h-11.5 w-11.5 items-center rounded-full bg-meta-2 dark:bg-meta-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 10L8 16" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12V16" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 8V16" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="3" y="4" width="18" height="16" rx="2" stroke="#F53838" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <div class="mt-3.5 flex items-end justify-between">
+                          <h4 class="text-title-md font-bold text-primary">12GB <span class="text-black font-normal">Purchased</span></h4>
+                      </div>
+                    </div>
+                    <div class="rounded-btn-radius bg-white py-4 px-5">
+                        <div class="flex h-11.5 w-11.5 items-center rounded-full bg-meta-2 dark:bg-meta-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51669 4.79613C5.84343 6.09112 4 8.83028 4 12C4 12.1969 4.00711 12.3921 4.0211 12.5855L10.1629 10.9398L8.51669 4.79613ZM11.4148 4.02107L13.1901 10.6463L13.2017 10.6897C13.2517 10.8754 13.3222 11.1373 13.3532 11.3775C13.3922 11.6802 13.4014 12.159 13.1197 12.6469C12.838 13.1348 12.4188 13.3662 12.1371 13.4838C11.9136 13.5771 11.6515 13.647 11.4657 13.6965L11.4223 13.7081L4.79626 15.4836C6.0913 18.1567 8.83039 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C11.8032 4 11.6081 4.00711 11.4148 4.02107Z" fill="#F53838"/>
+                                <path d="M9.92945 4.27259C9.67849 3.33602 9.55302 2.86773 9.12083 2.67286C8.68865 2.47799 8.30723 2.66782 7.54439 3.04748C6.97028 3.33321 6.42361 3.67419 5.91239 4.06647C4.87054 4.8659 3.99636 5.86272 3.33975 7C2.68314 8.13728 2.25696 9.39275 2.08555 10.6947C2.00144 11.3336 1.97948 11.9775 2.01909 12.6176C2.07171 13.4681 2.09803 13.8933 2.48288 14.1701C2.86773 14.447 3.33602 14.3215 4.27259 14.0706L10.0681 12.5176C10.9788 12.2736 11.4342 12.1516 11.6413 11.7929C11.8484 11.4342 11.7264 10.9788 11.4824 10.0681L9.92945 4.27259Z" fill="#F53838"/>
+                            </svg>
+                        </div>
+                        <div class="mt-3.5 flex items-end justify-between">
+                            <h4 class="text-title-md font-bold text-primary">1GB <span class="text-black font-normal">Remaining</span></h4>
+                        </div>
+                      </div>
+                      <div class="rounded-btn-radius bg-white py-4 px-5">
+                        <div class="flex h-11.5 w-11.5 items-center rounded-full bg-meta-2 dark:bg-meta-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5207 10.1859C18.6222 10.0844 18.7884 10.0889 18.8809 10.1986C20.1908 11.7521 20.9399 13.7085 20.9966 15.7498C21.0004 15.8878 20.8881 15.9998 20.75 15.9998H16.245C16.1069 15.9998 15.9958 15.8878 15.9872 15.75C15.9416 15.0221 15.6978 14.3235 15.2864 13.7283C15.2148 13.6247 15.2229 13.4837 15.312 13.3946L18.5207 10.1859ZM17.8009 9.11863C17.9106 9.21115 17.9151 9.37735 17.8136 9.47884L14.6048 12.6876C14.5158 12.7767 14.3748 12.7848 14.2712 12.7132C13.805 12.3911 13.2753 12.1717 12.7179 12.0699C12.594 12.0472 12.5 11.9418 12.5 11.8158V7.27797C12.5 7.13444 12.6207 7.02006 12.7637 7.03223C14.6178 7.19005 16.3782 7.91923 17.8009 9.11863ZM11.5 7.27797C11.5 7.13444 11.3794 7.02006 11.2364 7.03223C9.38228 7.19005 7.62183 7.91923 6.19917 9.11865C6.08943 9.21116 6.08499 9.37737 6.18648 9.47885L9.39524 12.6876C9.48431 12.7767 9.62528 12.7848 9.72892 12.7132C10.1951 12.3911 10.7247 12.1717 11.2822 12.0699C11.4061 12.0472 11.5 11.9418 11.5 11.8158V7.27797ZM8.71367 13.7284C8.7853 13.6247 8.77716 13.4837 8.68808 13.3946L5.47935 10.1859C5.37787 10.0845 5.21167 10.0889 5.11915 10.1986C3.80929 11.7521 3.06018 13.7085 3.00351 15.7498C2.99968 15.8878 3.11197 15.9998 3.25004 15.9998L7.7551 15.9998C7.89317 15.9998 8.00429 15.8878 8.01291 15.75C8.05849 15.0221 8.30232 14.3235 8.71367 13.7284Z" fill="#7E869E" fill-opacity="0.25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11.8158C12.5 11.9418 12.5939 12.0472 12.7179 12.0699C13.2753 12.1717 13.8049 12.3911 14.2711 12.7132C14.3748 12.7848 14.5157 12.7767 14.6048 12.6876L17.8135 9.47884C17.915 9.37735 17.9106 9.21115 17.8009 9.11863C16.3782 7.91923 14.6178 7.19005 12.7637 7.03223C12.6207 7.02006 12.5 7.13444 12.5 7.27797V11.8158Z" fill="#F53838"/>
+                            </svg>
+                        </div>
+                        <div class="mt-3.5 flex items-end justify-between">
+                            <h4 class="text-title-md font-bold text-primary">11GB <span class="text-black font-normal">Used</span></h4>
+                        </div>
+                      </div>
+                </div>
+                <!-- cart box end -->
+
+                <!-- list start -->
+                <div class="bg-white rounded-btn-radius py-13 md:px-55 pl-9 pr-3 mb-7">
+                    <div class="flex items-center">
+                        <div class="w-2/6"><p class="text-primary3">Plan</p></div>
+                        <div class="w-1/5"><p class="text-primary3">Status</p></div>
+                        <div class="w-1/5"><p class="text-primary3">Price</p></div>
+                        <div class="w-1/5"><p class="text-primary3">Invoice</p></div>
+                        <div class="w-6.67"></div>
+                    </div>
+                </div>
+                <div class="bg-primary7 rounded-btn-radius py-13 md:px-55 pl-9 pr-3 mb-7">
+                    <div class="flex items-center">
+                        <div class="w-2/6">
+                            <div class="plan-icon relative before:absolute before:w-3 before:h-3 before:shadow-dashboard-row-icon before:bg-primary11 before:top-2/4 before:-translate-y-2/4 before:-left-8 before:rounded-full">
+                                <p class="text-primary3">Monthly Subscription</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5"><p class="text-primary3">Active</p></div>
+                        <div class="w-1/5"><p class="text-primary3">$5.00</p></div>
+                        <div class="w-1/5"><p class="text-primary3">Paid</p></div>
+                        <div class="w-6.67">
+                            <ul class="flex items-center justify-end gap-1.5">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect x="6" y="5" width="4" height="14" rx="1" fill="#4F5665"/>
+                                        <rect x="14" y="5" width="4" height="14" rx="1" fill="#4F5665"/>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                    <path d="M8.75 7.875L12.25 4.375L8.75 0.875" stroke="#4F5665" stroke-width="2"/>
+                                    <path d="M15.8044 7.4375C16.4786 8.60518 16.7486 9.96268 16.5726 11.2995C16.3966 12.6363 15.7844 13.8776 14.831 14.831C13.8776 15.7844 12.6363 16.3966 11.2995 16.5726C9.96269 16.7486 8.60518 16.4786 7.4375 15.8044C6.26982 15.1302 5.35722 14.0896 4.84124 12.8439C4.32526 11.5982 4.23473 10.2171 4.5837 8.91473C4.93267 7.61235 5.70164 6.46152 6.77134 5.64071C7.84103 4.8199 9.15168 4.375 10.5 4.375" stroke="#4F5665" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary7 rounded-btn-radius py-13 md:px-55 pl-9 pr-3 mb-7">
+                    <div class="flex items-center">
+                        <div class="w-2/6">
+                            <div class="plan-icon relative before:absolute before:w-3 before:h-3 before:shadow-dashboard-row-icon before:bg-primary11 before:top-2/4 before:-translate-y-2/4 before:-left-8 before:rounded-full">
+                                <p class="text-primary3">Monthly Subscription</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5"><p class="text-primary3">Inactive</p></div>
+                        <div class="w-1/5"><p class="text-primary3">$5.00</p></div>
+                        <div class="w-1/5"><p class="text-primary3">Paid</p></div>
+                        <div class="w-6.67">
+                            <ul class="flex items-center justify-end gap-1.5">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect x="6" y="5" width="4" height="14" rx="1" fill="#4F5665"/>
+                                        <rect x="14" y="5" width="4" height="14" rx="1" fill="#4F5665"/>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                    <path d="M8.75 7.875L12.25 4.375L8.75 0.875" stroke="#4F5665" stroke-width="2"/>
+                                    <path d="M15.8044 7.4375C16.4786 8.60518 16.7486 9.96268 16.5726 11.2995C16.3966 12.6363 15.7844 13.8776 14.831 14.831C13.8776 15.7844 12.6363 16.3966 11.2995 16.5726C9.96269 16.7486 8.60518 16.4786 7.4375 15.8044C6.26982 15.1302 5.35722 14.0896 4.84124 12.8439C4.32526 11.5982 4.23473 10.2171 4.5837 8.91473C4.93267 7.61235 5.70164 6.46152 6.77134 5.64071C7.84103 4.8199 9.15168 4.375 10.5 4.375" stroke="#4F5665" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- list end -->
+
+                <!-- all Management start -->
+                <div class="flex md:flex-nowrap flex-wrap columns-3 gap-y-4 xl:gap-36 lg:gap-20 md:gap-8 mt-16 mb-36">
+                    <div class="w-full">
+                        <form>
+                            <label class="block">
+                              <span class="block font-semibold text-slate-700">IP Management</span>
+                              <!-- Using form state modifiers, the classes can be identical for every input -->
+                              <input type="text" value="123.4567.2093:1234" disabled class="mt-3 leading-25 text-center block w-full px-3 py-2 bg-white rounded-md text-11 shadow-sm placeholder-slate-400 focus:outline-none disabled:bg-slate-50 disabled:text-primary3 disabled:border-slate-200 disabled:shadow-none
+                              "/>
+                            </label>
+                            <div class="flex gap-3 mt-3">
+                                <div class="w-6/12">
+                                    <button class="w-full py-2 rounded-md bg-primary active:bg-primary focus:outline-none text-white leading-25 ">Save</button>
+                                </div>
+                                <div class="w-6/12">
+                                    <button class="w-full py-2 rounded-md bg-primary5 active:bg-primary focus:outline-none active:text-white text-primary6 leading-25 ">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w-full">
+                        <form>
+                            <label class="block">
+                              <span class="block font-semibold text-slate-700">HTTP/HTTPS Access Proxy</span>
+                              <!-- Using form state modifiers, the classes can be identical for every input -->
+                              <input type="text" value="123.4567.2093:1234" disabled class="mt-3 leading-25 text-center block w-full px-3 py-2 bg-white rounded-md text-11 shadow-sm placeholder-slate-400 focus:outline-none disabled:bg-slate-50 disabled:text-primary3 disabled:border-slate-200 disabled:shadow-none
+                              "/>
+                            </label>
+                            <div class="flex mt-3">
+                                <div class="w-full">
+                                    <button class="w-full py-2 rounded-md bg-primary active:bg-primary focus:outline-none text-white leading-25 ">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w-full">
+                        <div class="py-7 px-6 bg-primary rounded-btn-radius">
+                            <h4 class="font-bold text-white leading-25 text-right">Monthly Subscription</h4>
+                            <p class="text-13 text-right text-white leading-25 mb-7">21 DAYS REMAINING</p>
+                            <a href="" class="flex justify-end items-center text-white ">Change plan
+                                <span class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                        <path d="M2.375 6.75V9.75C2.375 12.5784 2.375 13.9926 3.25368 14.8713C4.13236 15.75 5.54657 15.75 8.375 15.75H10.625C13.4534 15.75 14.8676 15.75 15.7463 14.8713C16.625 13.9926 16.625 12.5784 16.625 9.75V8.25C16.625 5.42157 16.625 4.00736 15.7463 3.12868C14.8676 2.25 13.4534 2.25 10.625 2.25H7.125" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M11.875 11.25V12.25H12.875V11.25H11.875ZM6.22941 4.52405C5.82848 4.14422 5.19554 4.16132 4.81571 4.56226C4.43588 4.96319 4.45299 5.59612 4.85392 5.97595L6.22941 4.52405ZM10.875 6V11.25H12.875V6H10.875ZM11.875 10.25H6.33333V12.25H11.875V10.25ZM12.5627 10.524L6.22941 4.52405L4.85392 5.97595L11.1873 11.976L12.5627 10.524Z" fill="white"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- all Management end -->
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- footer start -->
+    <footer id="footer">
+        <section class="bg-primary9 pt-8 pb-16 xl:px-0 px-4">
+          <div class="container mx-auto ">
+            <div class="columns flex">
+              <div class="columns-7xl">
+                <p class="text-primary3 leading-30"><b>Lumix</b> is a private virtual network that has unique<br> features and has high security.</p>
+                <p class="text-primary8 mt-1 mb-2">©2023 Lumix.to</p>
+                <div class="pay flex gap-2.5 mt-4">
+                  <img src="./src/assets/img/bitcoin.svg" alt="">
+                  <img src="./src/assets/img/paypal.svg" alt="">
+                  <img src="./src/assets/img/visa-mc.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <div class="chet-box">
+            <div class="test relative">
+                <div class="buttoins fixed bottom-10 md:right-10 right-4 rounded-full bg-primary">
+                    <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft" data-dropdown-placement="left" class=" text-white bg-primary h-14 w-14 flex justify-center items-center rounded-full" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.873 0.0552498C21.424 -0.0427676 22.1785 -0.0719554 22.7585 0.508101C23.3386 1.08816 23.3094 1.84267 23.2114 2.39366C23.1151 2.9351 22.8886 3.61424 22.6331 4.38054L18.8477 15.7366C18.1052 17.9642 17.5155 19.7335 16.9304 20.9441C16.3784 22.0861 15.6049 23.2258 14.2638 23.2653C14.2049 23.2671 14.146 23.2671 14.0871 23.2653C12.746 23.2258 11.9725 22.0861 11.4205 20.9441C10.8354 19.7335 10.2457 17.9641 9.50313 15.7365L9.47676 15.6574C9.1429 14.6558 9.05732 14.4739 8.9341 14.348L8.91864 14.3325C8.7927 14.2093 8.61081 14.1237 7.60922 13.7899L7.53013 13.7635C5.30248 13.021 3.53316 12.4312 2.32255 11.8461C1.18051 11.2941 0.0408059 10.5206 0.00130069 9.17951C-0.000433564 9.12063 -0.000433564 9.06172 0.00130069 9.00284C0.0408059 7.66172 1.18051 6.88826 2.32255 6.33627C3.53316 5.75113 5.30247 5.16138 7.53012 4.41886L18.8861 0.633523C19.6524 0.378012 20.3315 0.151566 20.873 0.0552498ZM21.2232 2.02434C20.8443 2.09174 20.3071 2.26805 19.4469 2.55477L8.24167 6.28986C5.9176 7.06455 4.27276 7.61502 3.1929 8.13696C2.03018 8.69895 2.00207 9.00622 2.00043 9.06173C1.99986 9.08136 1.99986 9.101 2.00043 9.12062C2.00207 9.17613 2.03018 9.4834 3.1929 10.0454C4.27276 10.5673 5.9176 11.1178 8.24167 11.8925C8.29382 11.9099 8.3456 11.927 8.39699 11.9441C9.14991 12.1936 9.8188 12.4152 10.3173 12.9029C10.3329 12.9182 10.3484 12.9337 10.3637 12.9493C10.8514 13.4478 11.0731 14.1167 11.3226 14.8696C11.3396 14.921 11.3567 14.9728 11.3741 15.0249C12.1488 17.349 12.6993 18.9939 13.2212 20.0737C13.7832 21.2364 14.0905 21.2646 14.146 21.2662C14.1656 21.2668 14.1853 21.2668 14.2049 21.2662C14.2604 21.2646 14.5677 21.2364 15.1297 20.0737C15.6516 18.9939 16.2021 17.349 16.9768 15.0249L20.7119 3.81968C20.9986 2.95951 21.1749 2.42228 21.2423 2.04338C21.2437 2.03549 21.245 2.02781 21.2463 2.02035C21.2388 2.0216 21.2311 2.02293 21.2232 2.02434ZM21.4822 2.00122C21.4822 2.00122 21.4787 2.00114 21.473 1.99987C21.4795 2.00041 21.4822 2.00122 21.4822 2.00122ZM21.2668 1.79365C21.2655 1.7879 21.2654 1.78441 21.2654 1.78441C21.2654 1.78441 21.2662 1.78707 21.2668 1.79365Z" fill="white"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Dropdown menu -->
+                    <div id="dropdownLeft" class="z-10 p-6 hidden bg-white divide-gray-100 rounded-lg shadow md:w-80 w-56">
+                        <div class="py-1 px-4 bg-primary12 rounded-lg mb-3">
+                            <h2 class="text-11 leading-25"><b>Customer:</b> Hello</h2>
+                        </div>
+                        <div class="py-1 px-4 bg-primary rounded-lg mb-11">
+                            <h2 class="text-11 leading-25 text-white"><b>Support:</b>Hello! How may I help you?</h2>
+                        </div>
+                        <div class="border-0">
+                            <input type="text" id="last_name" class="bg-transparent border-b-1 border-primary13 border-t-0 border-l-0 border-r-0 text-primary13 text-sm focus:ring-transparent focus:border-primary13 block w-full p-2.5" placeholder="Enter you message" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+  
+  
+    </footer>
+    <!-- footer start -->
+
+    <script src="./src/assets/js/flowbite.min.js"></script>
+</body>
+</html>
